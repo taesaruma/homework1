@@ -1,0 +1,441 @@
+/* loualich selma */
+:root{
+    --main-color:rgb(205, 45, 125);
+    --box-shadow:0.5rem 1rem rgba(0,0,0,.1)
+    --outline:1rem solid rgba(0,0,0,.1)
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    outline: none; border:none; 
+    text-decoration: none;
+    text-transform: lowercase;
+    transition: .2 linear;
+}
+
+html{
+    font-size: xx-small;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    background-color: rgb(11, 55, 233);
+    padding: 1rem;
+    color: beige;
+    position: relative;
+    left: 190px;
+    bottom: 20px;
+}
+
+header{
+    position: flex;
+    top: 0%; left:0%; right: 0%;
+    background: #fefcfc;
+    padding: 3rem 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(0,0,0,0.5);
+}
+
+.logo{
+    font-size: 5rem;
+    color: rgb(73, 54, 241);
+    font-weight: bolder;
+    position:relative;
+    bottom: 1px;
+    top: 20px;
+    right: 240px;
+}
+header .navbar a{
+    font-size: 1.4rem;  
+    padding: 0.15rem;
+    color: #666;
+    position:relative;
+    bottom: 30px;
+    right: 450px;
+    
+
+
+    
+}
+header .navbar a:hover{
+    color:var(--main-color);
+}
+header .icons a{
+    font-size: 2rem;
+    color: #333;
+    position: relative;
+    bottom: 30px;
+    left: 200px;  
+    
+}
+
+
+
+header .icons span a{
+    font-size: 2rem;
+    color: #333;
+    position: relative;
+    top: 8px;
+    left: 125px;
+    
+    
+}
+
+header .icons a:hover{
+    color: rgb(242, 69, 69);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 86vh;
+    background: url(../images/jkk.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content p{
+    font-size: 2rem;
+    color: beige;
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 100px;
+    bottom: 10px;
+    top: 100px;
+}
+
+.home .content h2{
+    font-size: 3rem;
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+.home .content h1{
+    font-size: 6rem;
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 105px;
+    top: 60px;
+}
+.home .content h4{
+    font-size: 4.5rem;
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 240px;
+    top: -255px;
+}
+.home .content h3{
+    font-size: 1.8rem;
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 240px;
+    top: -227px;
+}
+.home .content h5{
+    font-size: 1.8rem;
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 240px;
+    top: -280px;
+}
+hr {
+    border-color: #0b0b0b;
+    background-color: #00080c;
+    border: none;
+    width: 2px;
+    height: 110px;
+    position: relative;
+    left: 230px;
+    bottom: 60px;
+    
+}
+
+form {
+    color: #555;
+    display: flex;
+    padding: 10px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    background: #fdf6f6;
+    position: relative;
+    height: 7vh;
+    position: relative;
+    top: 25px;
+    right: 400px;
+    
+    
+}
+.footer-colon .cherch button{
+    background: #c71414;
+    overflow: hidden;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    height: 42px;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    position: relative;
+    top: -10px;
+    left: 10px;
+}
+
+.footer-colon .cherch {
+    position: relative;
+    left:-10px ;
+}
+.products .heading{
+    font-size:large;
+    position: flex;
+    top: 43%; left:50%; right: 60%;
+    padding: 3rem 20%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button[type="submit"]:hover {
+    opacity: 1;
+}
+
+.products .products-slider{  
+    padding: 1rem;
+} 
+.products .products-slider:first-child{  
+    margin-bottom: 2rem;
+} 
+
+.products .products-slider .box{  
+    
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+
+/* background: #fff;
+border-radius: .5rem;
+text-align: center;
+padding: 3rem 2rem;
+outline-offset: -1rem;
+outline:.1rem solid rgba(0,0,0,.1) ;
+box-shadow: 0.5rem 1rem rgba(0,0,0,.1); */
+
+} 
+.s-home{
+    display: flex;
+    align-items: center;
+    min-height: 30vh;
+    background: url(../images/wal.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.s-home .content{
+    max-width: 50rem;
+}
+.s-home .content p{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 450px;
+    bottom: 50px;
+    top: 0px;
+}
+.s-home .content h2{
+    font-size: 2rem;
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 550px;
+    top: 5px;
+    color: rgb(255, 255, 255);
+    
+}
+.s-home .content h1{
+    font-size: 4rem;
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 615px;
+    top: -58px;
+    color: rgb(255, 255, 255);
+}
+.s-home .content h3{
+    font-size: 2rem;
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 600px;
+    top: -70px;
+    color: rgb(255, 255, 255);
+}
+.btnn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    background-color: rgb(222, 12, 12);
+    padding: 1rem;
+    color: beige;
+    position: relative;
+    left: 613px;
+    bottom: 60px;
+}
+.c-home{
+    display: flex;
+    align-items: center;
+    min-height: 30vh;
+    background: url(../images/wal.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.c-home .content{
+    max-width: 50rem;
+}
+.c-home .content p{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 450px;
+    bottom: 50px;
+    top: 0px;
+}
+.c-home .content h2{
+    font-size: 2rem;
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 550px;
+    top: 5px;
+    color: rgb(255, 255, 255);
+    
+}
+.c-home .content h1{
+    font-size: 4rem;
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 615px;
+    top: -58px;
+    color: rgb(255, 255, 255);
+}
+.c-home .content h3{
+    font-size: 2rem;
+    padding: 1rem 0%;
+    line-height: 1.5;
+    position: relative;
+    left: 600px;
+    top: -70px;
+    color: rgb(255, 255, 255);
+}
+.btnnn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    background-color: rgb(75, 181, 51);
+    padding: 1rem;
+    color: beige;
+    position: relative;
+    left: 613px;
+    bottom: 60px;
+}
+.container{
+max-width: 1170px;
+background-color: #ededed;
+margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #ededed;
+    padding: 70px 0;
+}
+.footer-colon{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-colon h4{
+    font-size: 18px;
+    color: #040404;
+    text-transform: capitalize;
+    margin-right: 30px;
+    font-weight: 500;
+}
+
+.footer-colon ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    display: block ;
+}
+.footer-colon .p {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    display: block ;
+}
+/*.footer-colon .fa-map-marker{
+    font-size: 10px;
+    text-transform: capitalize;
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    display: block ;
+}*/
+.footer-colon .ico a{
+    font-size: 3rem;
+    color: #0a0a0a;  
+}
